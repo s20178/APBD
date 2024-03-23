@@ -26,7 +26,7 @@ namespace ConsoleApp
                 return 0;
             }
 
-            int sum = 0;
+            int sum = 11;
             foreach (int num in array)
             {
                 sum += num;
