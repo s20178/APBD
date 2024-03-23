@@ -30,7 +30,6 @@ namespace ConsoleApp
             foreach (int num in array)
             {
                 sum += num;
-                Console.WriteLine(sum);
             }
 
             return (double)sum / array.Length;
