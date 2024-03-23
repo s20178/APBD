@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,25 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello and Welcome!");
+            int[] numbers = { 5, 10, 15, 20, 25 };
+            double average = CalculateAverage(numbers);
+            Console.WriteLine("Average: " + average);
+        }
+
+        static double CalculateAverage(int[] array)
+        {
+            if (array == null || array.Length == 0)
+            {
+                return 0;
+            }
+
+            int sum = 0;
+            foreach (int num in array)
+            {
+                sum += num;
+            }
+
+            return (double)sum / array.Length;
         }
     }
 }
