@@ -26,10 +26,11 @@ namespace ConsoleApp
                 return 0;
             }
 
-            int sum = 11;
+            int sum = 0;
             foreach (int num in array)
             {
                 sum += num;
+                Console.WriteLine(sum);
             }
 
             return (double)sum / array.Length;
